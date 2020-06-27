@@ -13,3 +13,9 @@ _net_curl_.o: _net_curl_.c _net_curl_.h
 
 clean:
 	rm -f *~ *.o notify
+
+install: all
+	cp notify ../bin/notify
+
+remove:
+	rm ../bin/notify
