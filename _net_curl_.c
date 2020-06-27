@@ -35,7 +35,7 @@ int _post_(_post_struct_ pst)
         fprintf(stderr, "request failed: %s\n", curl_easy_strerror(_res_cd_)),
         fprintf(stderr, "error: %s\n", _err_msg_),
         pst._error_ = 1;
-    fprintf(stderr, "data: %s\n", dat._dat_);
+    fprintf(stdout, "%s", dat._dat_);
     curl_easy_cleanup(_session_);
     curl_global_cleanup();
     return 0;
