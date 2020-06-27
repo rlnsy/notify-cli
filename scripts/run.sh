@@ -1,6 +1,8 @@
 #!/bin/bash
+DIV="------------------------->"
 make clean
 make
-echo "------------------------->"
-./notify
+printf  "%s\n"      "$DIV"
+./notify "$@"
+printf  "\n%s\n"    "$DIV"
 make clean
