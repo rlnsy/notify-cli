@@ -1,0 +1,4 @@
+_secrets_.h
+*.o
+notify
+.vscode
