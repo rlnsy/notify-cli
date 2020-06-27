@@ -26,6 +26,4 @@ typedef struct
 
 size_t _store_dat_(char* ptr, size_t size, size_t nmemb, _res_data_* data);
 
-int data_init(_res_data_);
-
 #endif
